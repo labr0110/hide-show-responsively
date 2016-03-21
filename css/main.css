@@ -25,3 +25,41 @@ img {
   display: block;
   width: 100%;
 }
+
+img:nth-child(2),
+img:nth-child(4) {
+  display: none;
+}
+
+@media only screen and (min-width: 25em) {
+  img {
+    display: inline-block;
+    text-align: center;
+    width: 48%;
+  }
+    img:nth-child(2),
+    img:nth-child(4) {
+    display: inline-block;
+  }
+}
+
+
+@media only screen and (min-width: 38em) {
+  img {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+  }
+  img:nth-child(1) {
+    display: none;
+}
+
+@media only screen and (min-width: 60em) {
+  img {
+    display: inline-block;
+    text-align: center;
+    width: 23%;
+  }
+  img:nth-child(1) {
+    display: inline-block;
+}
